@@ -1,0 +1,17 @@
+
+/* Aquivo principal de importação dos components scss a serem incorporados a folha de estilo principal do projeto */
+
+*{
+    margin:0;
+    padding:0;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'grid';
+@import 'components';
+@import 'auxiliaries';

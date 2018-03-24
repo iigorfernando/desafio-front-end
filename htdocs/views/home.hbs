@@ -1,0 +1,181 @@
+{{!
+< main}} {{#each section}} {{#ifCond this.name 'main'}} <div class="grid grid-50 grid-margin-16-lg">
+
+    {{#each (slice this.data 0 2)}}
+    <div class="grid-item">
+        <div class="new__featured">
+            <picture>
+                <img src="/assets/media/{{this.image}}" alt="">
+            </picture>
+            <div class="new__featured-data">
+                <h5>{{this.label}}</h5>
+                <h1>{{this.title}}</h1>
+                <span>{{this.description}}</span>
+            </div>
+            <a class="link-share-white" href="{{this.url}}">
+                <i class="link-icon"></i>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+
+    </div>
+
+    <div class="grid grid-50 grid-margin-16-lg">
+        {{#each (slice this.data 2 4)}}
+        <div class="grid-item">
+            <div class="new2">
+                <picture class="new2__picture">
+                    <img class="new2__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                </picture>
+                <div class="new2__container_data">
+                    <h5>{{this.label}}</h5>
+                    <h2>{{this.title}}</h2>
+                    <p>{{this.description}}</p>
+                </div>
+                <a class="link-share" href="{{this.url}}">
+                    <i class="link-icon"></i>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+
+    <section class="news">
+        <div class="grid grid-25 grid-margin-16-lg">
+            {{#each (slice this.data 4 8)}}
+            <div class="grid-item">
+                <div class="new">
+                    <picture class="new__picture">
+                        <img class="new__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                    </picture>
+
+                    <div class="new__container_data">
+                        <h5>{{this.label}}</h5>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <p>{{this.description}}</p>
+                    <a class="link-share" href="">
+                        <i class="link-icon"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </section>
+
+    {{/ifCond}} {{#ifCond this.name 'Brasil' }}
+    <section class="advertising-content">
+        <div class="advertising-box">
+            <p>ADVERTISING 728X90</p>
+        </div>
+    </section>
+
+
+
+    <section class="news">
+        <h1 class="title__section">{{this.name}}</h1>
+        <div class="grid grid-25 grid-margin-16-lg {{this.name}}">
+            {{#each (slice this.data 0 4)}}
+            <div class="grid-item">
+                <div class="new">
+                    <picture class="new__picture">
+                        <img class="new__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                    </picture>
+
+                    <div class="new__container_data">
+                        <h5>{{this.label}}</h5>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <p> {{this.description}}</p>
+                    <a class="link-share" href="{{this.url}}">
+                        <i class="link-icon"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each }} {{#each (slice this.data 4 8)}}
+            <div class="grid-item page-2">
+                <div class="new">
+                    <picture class="new__picture">
+                        <img class="new__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                    </picture>
+
+                    <div class="new__container_data">
+                        <h5>{{this.label}}</h5>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <p> {{this.description}}</p>
+                    <a class="link-share" href="{{this.url}}">
+                        <i class="link-icon"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each }}
+
+        </div>
+
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <div class="footer__section">
+                    <h3 class="btn" data-value="{{this.name}}">{{this.name}} +</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {{/ifCond}} {{#ifCond this.name 'Mundo' }}
+    <section class="news">
+        <h1 class="title__section">{{this.name}}</h1>
+        <div class="grid grid-25 grid-margin-16-lg {{this.name}}">
+            {{#each (slice this.data 0 4)}}
+            <div class="grid-item">
+                <div class="new">
+                    <picture class="new__picture">
+                        <img class="new__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                    </picture>
+
+                    <div class="new__container_data">
+                        <h5>{{this.label}}</h5>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <p> {{this.description}}</p>
+                    <a class="link-share" href="{{this.url}}">
+                        <i class="link-icon"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each}} {{#each (slice this.data 4 8)}}
+            <div class="grid-item page-2">
+                <div class="new">
+                    <picture class="new__picture">
+                        <img class="new__picture_img" src="/assets/media/{{this.image}}" alt="{{this.title}}">
+                    </picture>
+
+                    <div class="new__container_data">
+                        <h5>{{this.label}}</h5>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <p> {{this.description}}</p>
+                    <a class="link-share" href="{{this.url}}">
+                        <i class="link-icon"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <div class="footer__section">
+                    <h3 class="btn" data-value="{{this.name}}">{{this.name}} +</h3>
+                </div>
+            </div>
+        </div>
+
+    </section> {{/ifCond}} {{/each}}

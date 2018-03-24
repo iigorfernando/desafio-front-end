@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    background:$primaryColor;
+    padding: 20px 0px;
+    position: relative;
+    
+    .header__menu{
+        float: left;
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+    
+        .header__menu--icon{
+            transform: translateY(-50%);
+            margin-left: 16px;
+            width: 24px;
+            height: 20px;
+            background: url('/assets/media/menu-icon.png') no-repeat center center;
+        }
+    }
+
+    .header__logo{
+        max-width:40%;
+        height: auto;
+        margin:0 auto;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:800px){
+    .header__logo{
+        max-width: 20%;
+    }
+}
